@@ -1,0 +1,39 @@
+{
+  "name": "aws-rekognition-learning",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.4.3",
+    "@material-ui/icons": "^4.4.3",
+    "@zeit/next-css": "^1.0.1",
+    "aws-sdk": "^2.548.0",
+    "babel-node": "0.0.1-security",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "filepond": "^4.7.2",
+    "filepond-plugin-image-exif-orientation": "^1.0.6",
+    "filepond-plugin-image-preview": "^4.4.0",
+    "lodash.throttle": "^4.1.1",
+    "mongoose": "^5.7.5",
+    "multer": "^1.4.2",
+    "multer-s3-transform": "^2.3.2",
+    "next": "9.3.2",
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "react-filepond": "^7.0.1",
+    "react-webcam": "^3.1.1",
+    "sharp": "^0.23.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "nodemon": "^1.19.3"
+  }
+}
