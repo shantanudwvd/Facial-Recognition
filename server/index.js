@@ -14,19 +14,19 @@ const handle = nextApp.getRequestHandler()
 const port = 3000
 
 nextApp.prepare().then(async () => {
-  const app = express()
+	const app = express()
 
-  router(app)
+	router(app)
 
-  app.get('*', (req, res) => {
-    return handle(req, res)
-  })
+	app.get('*', (req, res) => {
+		return handle(req, res)
+	})
 
-  await initialise()
-  await connectToDatabase()
+	await initialise()
+	await connectToDatabase()
 
-  app.listen(port, err => {
-    if (err) throw err
-    console.log(`> Ready on localhost:${port}`)
-  })
+	app.listen(port, err => {
+		if (err) throw err
+		console.log(`> Ready on localhost:${port}`)
+	})
 })

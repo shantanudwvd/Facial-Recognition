@@ -97,19 +97,19 @@ const Webcam = ({ onCapture, isUploading }) => {
         audio={false}
         height={videoConstraints.height}
         ref={webcamRef}
-        screenshotFormat="image/jpeg"
+        screenshotFormat='image/jpeg'
         width={videoConstraints.width}
         videoConstraints={videoConstraints}
         screenshotQuality={1}
       />
       <div className={classes.wrapper}>
         <Button
-          color="primary"
-          variant="contained"
+          color='primary'
+          variant='contained'
           disabled={state.uploading}
           className={classes.button}
           onClick={capture}
-          type="button"
+          type='button'
         >
           {state.uploading && (
             <CircularProgress size={24} className={classes.buttonProgress} />

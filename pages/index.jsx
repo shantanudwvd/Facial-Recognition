@@ -62,17 +62,17 @@ const SelectYourPictures = () => {
   const renderNoPicturesFound = () => (
     <>
       <Box
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        flexDirection="column"
+        display='flex'
+        alignItems='center'
+        justifyContent='center'
+        flexDirection='column'
         mb={3}
         mt={3}
       >
-        <Typography component="h1" variant="h4" align="center">
+        <Typography component='h1' variant='h4' align='center'>
           Nothing to show
         </Typography>
-        <Typography component="p" gutterBottom>
+        <Typography component='p' gutterBottom>
           Sorry, we were not able to find any pictures of you, please try again.
         </Typography>
       </Box>
@@ -83,13 +83,13 @@ const SelectYourPictures = () => {
     return (
       <>
         <Box
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          flexDirection="column"
+          display='flex'
+          alignItems='center'
+          justifyContent='center'
+          flexDirection='column'
           mb={3}
         >
-          <Typography component="h1" variant="h4" align="center">
+          <Typography component='h1' variant='h4' align='center'>
             We found you!
           </Typography>
         </Box>
@@ -111,17 +111,17 @@ const SelectYourPictures = () => {
   }
 
   return (
-    <Container className={classes.container} maxWidth="md">
+    <Container className={classes.container} maxWidth='md'>
       <main className={classes.layout}>
         <Paper className={classes.paper} elevation={2}>
-          <Typography component="h1" variant="h4" align="center" gutterBottom>
+          <Typography component='h1' variant='h4' align='center' gutterBottom>
             Find your face using AWS Rekognition
           </Typography>
-          <Typography component="h5" variant="h5" gutterBottom>
+          <Typography component='h5' variant='h5' gutterBottom>
             Start by uploading images to your face recognition collection
           </Typography>
           <FileUpload />
-          <Typography component="h5" variant="h5" gutterBottom>
+          <Typography component='h5' variant='h5' gutterBottom>
             Next, upload a picture of yourself
           </Typography>
           <Webcam onCapture={processImage} isUploading={uploading} />
