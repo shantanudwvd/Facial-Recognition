@@ -17,9 +17,7 @@ const uploadPhotoAsync = async (apiUrl, filename, blob) => {
   if (response.status !== 200) {
     return {
       success: false,
-      data: `Request failed with status code ${
-				response.status
-			}.  ${await response.text()}`
+      data: `Request failed with status code ${response.status} ${await response.text()}`
     }
   }
 

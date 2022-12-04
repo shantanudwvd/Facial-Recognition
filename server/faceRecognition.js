@@ -59,7 +59,7 @@ async function recogniseFromBuffer (image) {
 
           return resolve(pictures)
         }
-        return reject('Not recognized')
+        return reject(throw new Error('Not recognized'))
       }
     )
   })
@@ -103,8 +103,7 @@ async function initialise () {
   AWS.config.region = process.env.AWS_REGION
 
   const collections = await listCollections()
-  const hasCollections =
-		collections && collections.CollectionIds && collections.CollectionIds.length
+  const hasCollections = collections && collections.CollectionIds && collections.CollectionIds.length
   const collectionIds = hasCollections ? collections.CollectionIds : []
   const hasCollection = collectionIds.find(c => c === collectionName)
 
