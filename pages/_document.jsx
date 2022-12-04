@@ -6,7 +6,7 @@ import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
 const theme = responsiveFontSizes(createMuiTheme())
 
 class MyDocument extends Document {
-  render() {
+  render () {
     return (
       <Html>
         <Head>
@@ -43,8 +43,8 @@ class MyDocument extends Document {
           </style>
         </Head>
         <body>
-        <Main />
-        <NextScript />
+          <Main />
+          <NextScript />
         </body>
       </Html>
     )

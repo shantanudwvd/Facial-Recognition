@@ -24,7 +24,7 @@ const FileUpload = () => {
     <section id='upload' className={classes.container}>
       <FilePond
         files={state}
-        allowMultiple={true}
+        allowMultiple
         server='/api/upload'
         onupdatefiles={items => {
           setState(items.map(item => item.file))
