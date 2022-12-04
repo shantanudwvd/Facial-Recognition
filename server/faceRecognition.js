@@ -59,7 +59,7 @@ async function recogniseFromBuffer (image) {
 
           return resolve(pictures)
         }
-        return reject(throw new Error('Not recognized'))
+        return reject(new Error('Not recognized'))
       }
     )
   })
